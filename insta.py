@@ -20,8 +20,9 @@ def load_usernames(filepath):
         print(f"Error loading {filepath}: {e}")
         return set()
 
-following_path = r"E:\insta_check\connections\followers_and_following\following.json"
-followers_path = r"E:\insta_check\connections\followers_and_following\followers_1.json"
+# add the paths to your JSON files you downloaded from Instagram
+following_path = r"following.json"
+followers_path = r"followers_1.json"
 
 following = load_usernames(following_path)
 followers = load_usernames(followers_path)
